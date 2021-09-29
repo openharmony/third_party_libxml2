@@ -21,6 +21,9 @@
         </policylist>
         <licensefile>Copyright</licensefile>
         <filefilterlist>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+                <filteritem type="filepath" name=".*" desc="For license see the license of this project."/>
+            </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for license header policies">
                 <filteritem type="filepath" name="xmlwriter.c" desc="For license and disclaimer see the license and disclaimer of libxml2."/>
                 <filteritem type="filename" name="REC-xml-19980210.xml" desc="测试xml文件"/>
