@@ -19,6 +19,10 @@
     ],
     "envs": {},
     "dirs": {},
+    "licensePath": "Copyright",
+    "readmePath": {
+        "en": "README"
+    },
     "segment": {
         "destPath": "third_party/libxml2"
     },
