@@ -17,8 +17,8 @@
         "third-party",
         "libxml2"
     ],
-    "envs": [],
-    "dirs": [],
+    "envs": {},
+    "dirs": {},
     "segment": {
         "destPath": "third_party/libxml2"
     },
