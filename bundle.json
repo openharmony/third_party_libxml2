@@ -1,0 +1,43 @@
+{
+    "name": "@ohos/libxml2",
+    "version": "",
+    "description": "Third-party open-source software libxml2 | 三方开源软件libxml2",
+    "homePage": "https://gitee.com/openharmony",
+    "license": "MIT",
+    "repository": "https://gitee.com/openharmony/third_party_libxml2",
+    "domain": "os",
+    "language": "",
+    "publishAs": "code-segment",
+    "private": false,
+    "scripts": {},
+    "tags": [
+        "third_party"
+    ],
+    "keywords": [
+        "third-party",
+        "libxml2"
+    ],
+    "envs": {},
+    "dirs": {},
+    "licensePath": "Copyright",
+    "readmePath": {
+        "en": "README"
+    },
+    "segment": {
+        "destPath": "third_party/libxml2"
+    },
+    "component": {
+        "name": "thirdparty_libxml2",
+        "subsystem": "",
+        "syscap": [],
+        "features": [],
+        "adapted_system_type": [],
+        "rom": "",
+        "ram": "",
+        "build": {
+            "sub_component": [],
+            "inner_kits": [],
+            "test": []
+        }
+    }
+}
