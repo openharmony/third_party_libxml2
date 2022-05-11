@@ -152,6 +152,6 @@ ohos_shared_library("xml2") {
   }
 
   deps = [ "//third_party/zlib:libz" ]
-  part_name = "samgr_standard"
-  subsystem_name = "distributedschedule"
+  part_name = "libxml2"
+  subsystem_name = "thirdparty"
 }
