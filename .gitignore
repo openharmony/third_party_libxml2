@@ -17,6 +17,7 @@ autom4te.cache
 bissect*
 compile
 config.guess
+config.h
 config.h.in
 config.h.in~
 config.log
@@ -55,6 +56,7 @@ include/Makefile
 include/Makefile.in
 include/libxml/Makefile
 include/libxml/Makefile.in
+include/libxml/xmlversion.h
 install-sh
 libtool
 libxml-2.0-uninstalled.pc
