@@ -23,7 +23,8 @@
 	<filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
                 <filteritem type="filepath" name="test/schemas/changelog093_1.xsd" desc="test file"/>
-                <filteritem type="filepath" name="test/valid/dtds/NewsMLv1.0.dtd" desc="test file"/>
+		<filteritem type="filepath" name="test/valid/dtds/NewsMLv1.2.dtd" desc="test file"/>
+                <filteritem type="filepath" name="doc/libxml-doc.el" desc="帮助文档"/>
             </filefilter>
             <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
                 <filteritem type="filepath" name=".*" desc="For license see the license of this project."/>
