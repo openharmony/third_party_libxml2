@@ -11,7 +11,7 @@
     "scripts": {},
     "licensePath": "Copyright",
     "readmePath": {
-        "en": "README"
+        "en": "README.md"
     },
     "component": {
         "name": "libxml2",
