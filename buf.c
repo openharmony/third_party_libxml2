@@ -172,8 +172,8 @@ xmlBufCreateSize(size_t size) {
     ret->error = 0;
     ret->buffer = NULL;
     ret->alloc = xmlBufferAllocScheme;
-    ret->size = (size ? size+1 : 0);         /* +1 for ending null */
-    ret->compat_size = (int) ret->size;
+    ret->size = (size ? size + 1 : 0);         /* +1 for ending null */
+    ret->compat_size = (ret->size > INT_MAX ? INT_MAX : ret->size);
     if (ret->size){
         ret->content = (xmlChar *) xmlMallocAtomic(ret->size * sizeof(xmlChar));
         if (ret->content == NULL) {
