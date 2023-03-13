@@ -176,6 +176,11 @@ config("libxml2_static_config") {
   } else if (is_linux) {
     include_dirs += [ get_label_info(":libxml2_generate_header",
                                      "target_out_dir") + "/include" ]
+  } else {
+    defines = [
+      "HAVE_CONFIG_H",
+      "_REENTRANT",
+    ]
   }
 
   include_dirs += [ "include" ]
