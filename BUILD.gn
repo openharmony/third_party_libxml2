@@ -153,6 +153,10 @@ ohos_shared_library("xml2") {
   }
 
   deps = [ "//third_party/zlib:libz" ]
+  innerapi_tags = [
+    "chipsetsdk",
+    "platformsdk",
+  ]
   part_name = "libxml2"
   subsystem_name = "thirdparty"
 }
