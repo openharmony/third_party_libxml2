@@ -20,10 +20,10 @@
             </policy>
         </policylist>
         <licensefile>Copyright</licensefile>
-	<filefilterlist>
+    <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
                 <filteritem type="filepath" name="test/schemas/changelog093_1.xsd" desc="test file"/>
-		<filteritem type="filepath" name="test/valid/dtds/NewsMLv1.2.dtd" desc="test file"/>
+        <filteritem type="filepath" name="test/valid/dtds/NewsMLv1.2.dtd" desc="test file"/>
                 <filteritem type="filepath" name="doc/libxml-doc.el" desc="帮助文档"/>
             </filefilter>
             <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
@@ -32,6 +32,10 @@
             <filefilter name="defaultPolicyFilter" desc="Filters for license header policies">
                 <filteritem type="filepath" name="xmlwriter.c" desc="For license and disclaimer see the license and disclaimer of libxml2."/>
                 <filteritem type="filename" name="REC-xml-19980210.xml" desc="测试xml文件"/>
+                <filteritem type="filename" name="759398.xml" desc="测试xml文件"/>
+                <filteritem type="filename" name="spec_0.xml" desc="测试xml文件"/>
+                <filteritem type="filename" name="tutor11_1_3.xml" desc="测试xml文件"/>
+                <filteritem type="filename" name="gjobs.xml" desc="示例xml文件"/>
                 <filteritem type="filename" name="readme.vms" desc="问题记录文件"/>
                 <filteritem type="filename" name="autogen.sh" desc="三方编译脚本"/>
             </filefilter>
