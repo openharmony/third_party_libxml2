@@ -119,8 +119,6 @@ config("libxml2_static_config") {
   ]
   if (is_mingw) {
     defines = [ "LIBXML_STATIC" ]
-  } else if (is_mac) {
-    defines = [ "LIBXML_THREAD_ENABLED" ]
   } else {
     defines = [
       "HAVE_CONFIG_H",
