@@ -3,7 +3,6 @@
 *.lo
 *.log
 *.pyc
-*.patch
 .deps
 .libs
 .memdump
