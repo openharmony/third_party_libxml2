@@ -55,7 +55,9 @@ def do_patch(args, target_dir):
         "backport-CVE-2022-40303-Fix-integer-overflows-with-XML_PARSE_.patch",
         "backport-CVE-2022-40304-Fix-dict-corruption-caused-by-entity-.patch",
         "backport-schemas-Fix-null-pointer-deref-in-xmlSchemaCheckCOSS.patch",
-        "libxml2-multilib.patch"
+        "libxml2-multilib.patch",
+        "CVE-2023-45322-pre-patch.patch",
+        "CVE-2023-45322.patch"
     ]
 
     for patch in patch_file:
