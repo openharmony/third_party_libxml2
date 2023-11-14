@@ -10,6 +10,7 @@
 #   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
+import("//build/config/config.gni")
 import("//build/ohos.gni")
 
 # Execute the script and extract libxml2
@@ -156,6 +157,14 @@ ohos_shared_library("libxml2") {
     libs = [ "dl" ]
   }
 
+  if (current_os == "ios") {
+    ldflags = [
+      "-Wl",
+      "-install_name",
+      "@rpath/libxml2_shared.framework/libxml2_shared",
+    ]
+    output_name = "xml2_shared"
+  }
   deps = [
     ":libxml2_generate_header",
     ":libxml2_install_action",
@@ -167,6 +176,14 @@ ohos_shared_library("libxml2") {
   ]
   part_name = "libxml2"
   subsystem_name = "thirdparty"
+}
+
+if (current_os == "ios") {
+  ohos_combine_darwin_framework("libxml2_shared") {
+    deps = [ ":libxml2" ]
+    subsystem_name = "thirdparty"
+    part_name = "libxml2"
+  }
 }
 
 ohos_static_library("static_libxml2") {
