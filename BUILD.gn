@@ -101,6 +101,7 @@ config("libxml2_private_config") {
     "-Wno-tautological-pointer-compare",
     "-Wno-unused-function",
     "-Wno-enum-compare",
+    "-Wno-int-conversion",
   ]
   defines = [
     "HAVE_CONFIG_H",
