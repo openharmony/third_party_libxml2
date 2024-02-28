@@ -57,7 +57,8 @@ def do_patch(args, target_dir):
         "backport-schemas-Fix-null-pointer-deref-in-xmlSchemaCheckCOSS.patch",
         "libxml2-multilib.patch",
         "Fix-CVE-2023-45322-pre-patch.patch",
-        "Fix-CVE-2023-45322.patch"
+        "Fix-CVE-2023-45322.patch",
+        "Fix-CVE-2023-25062.patch"
     ]
 
     for patch in patch_file:
