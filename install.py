@@ -56,9 +56,10 @@ def do_patch(args, target_dir):
         "backport-CVE-2022-40304-Fix-dict-corruption-caused-by-entity-.patch",
         "backport-schemas-Fix-null-pointer-deref-in-xmlSchemaCheckCOSS.patch",
         "libxml2-multilib.patch",
-        "Fix-CVE-2023-45322-pre-patch.patch",
-        "Fix-CVE-2023-45322.patch",
-        "Fix-CVE-2023-25062.patch"
+        "Fix-CVE-2023-25062.patch",
+        "Fix-KXSA-2023-350309-pre.patch",
+        "Fix-KXSA-2023-350309-first.patch",
+        "Fix-KXSA-2023-350309-second.patch"
     ]
 
     for patch in patch_file:
