@@ -102,6 +102,7 @@ config("libxml2_private_config") {
     "-Wno-unused-function",
     "-Wno-enum-compare",
     "-Wno-int-conversion",
+    "-Wno-uninitialized",
   ]
   defines = [
     "HAVE_CONFIG_H",
