@@ -47,6 +47,7 @@ def apply_patch(patch_file, target_dir):
 
 
 def do_patch(args, target_dir):
+
     patch_file = [
         "Fix-memleaks-in-xmlXIncludeProcessFlags.patch",
         "backport-parser-Fix-potential-memory-leak-in-xmlParseAttValue.patch",
@@ -228,7 +229,8 @@ def do_patch(args, target_dir):
         "backport-Fix-use-after-free-in-xmlParseContentInternal.patch",
         "backport-malloc-fail-Fix-null-deref-after-xmlXIncludeNewRef.patch",
         "backport-xpath-Ignore-entity-ref-nodes-when-computing-node-ha.patch",
-        "backport-SAX-Always-initialize-SAX1-element-handlers.patch"
+        "backport-SAX-Always-initialize-SAX1-element-handlers.patch",
+        "Fix-malloc-fail.patch"
     ]
 
     for patch in patch_file:
