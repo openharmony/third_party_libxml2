@@ -47,6 +47,7 @@ def apply_patch(patch_file, target_dir):
 
 
 def do_patch(args, target_dir):
+
     patch_file = [
         "Fix-memleaks-in-xmlXIncludeProcessFlags.patch",
         "backport-parser-Fix-potential-memory-leak-in-xmlParseAttValue.patch",
