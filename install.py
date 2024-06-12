@@ -58,7 +58,8 @@ def do_patch(args, target_dir):
         "libxml2-multilib.patch",
         "Fix-CVE-2023-45322-pre-patch.patch",
         "Fix-CVE-2023-45322.patch",
-        "Fix-CVE-2023-25062.patch"
+        "Fix-CVE-2023-25062.patch",
+        "Fix-CVE-2024-34459.patch"
     ]
 
     for patch in patch_file:
