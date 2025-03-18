@@ -230,7 +230,10 @@ def do_patch(args, target_dir):
         "backport-xpath-Ignore-entity-ref-nodes-when-computing-node-ha.patch",
         "backport-SAX-Always-initialize-SAX1-element-handlers.patch",
         "Fix-malloc-fail.patch",
-        "Fix-CVE-2024-34459.patch"
+        "Fix-CVE-2024-34459.patch",
+        "Fix-CVE-2024-56171.patch",
+        "Fix-CVE-2025-24928.patch",
+        "Fix-CVE-2025-27113.patch"
     ]
 
     for patch in patch_file:
