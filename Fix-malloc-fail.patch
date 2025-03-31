@@ -1,8 +1,8 @@
 diff --git a/buf.c b/buf.c
-index 40a5ee06..1fa975a6 100644
+index d8992f7..1ae7542 100644
 --- a/buf.c
 +++ b/buf.c
-@@ -1265,7 +1265,7 @@ xmlBufMergeBuffer(xmlBufPtr buf, xmlBufferPtr buffer) {
+@@ -1261,7 +1261,7 @@ xmlBufMergeBuffer(xmlBufPtr buf, xmlBufferPtr buffer) {
   */
  int
  xmlBufResetInput(xmlBufPtr buf, xmlParserInputPtr input) {
