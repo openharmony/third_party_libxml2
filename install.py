@@ -91,7 +91,6 @@ def do_patch(args, target_dir):
         "backport-xinclude-Fix-more-memory-leaks-in-xmlXIncludeLoadDoc.patch",
         "backport-schemas-Fix-infinite-loop-in-xmlSchemaCheckElemSubst.patch",
         "backport-malloc-fail-Fix-memory-leak-in-xmlCreatePushParserCt.patch",
-        "backport-malloc-fail-Fix-memory-leak-in-xmlStaticCopyNodeList.patch",
         "backport-malloc-fail-Fix-memory-leak-in-xmlNewPropInternal.patch",
         "backport-malloc-fail-Fix-memory-leak-in-xmlNewDocNodeEatName.patch",
         "backport-malloc-fail-Fix-infinite-loop-in-xmlSkipBlankChars.patch",
@@ -233,7 +232,9 @@ def do_patch(args, target_dir):
         "Fix-CVE-2024-34459.patch",
         "Fix-CVE-2024-56171.patch",
         "Fix-CVE-2025-24928.patch",
-        "Fix-CVE-2025-27113.patch"
+        "Fix-CVE-2025-27113.patch",
+        "Fix-type-confusion-in-xmlSchemaCheckAGPropsCorrect.patch",
+        "Fix-CVE-2019-19956.patch"
     ]
 
     for patch in patch_file:
