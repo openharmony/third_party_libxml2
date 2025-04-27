@@ -234,7 +234,9 @@ def do_patch(args, target_dir):
         "Fix-CVE-2025-24928.patch",
         "Fix-CVE-2025-27113.patch",
         "Fix-type-confusion-in-xmlSchemaCheckAGPropsCorrect.patch",
-        "Fix-CVE-2019-19956.patch"
+        "Fix-CVE-2019-19956.patch",
+        "Fix-CVE-2025-32414.patch",
+        "Fix-CVE-2025-32415.patch"
     ]
 
     for patch in patch_file:
