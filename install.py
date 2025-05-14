@@ -62,8 +62,8 @@ def main():
     libpng_path.add_argument('--gen-dir', help='generate path of libxml2')
     libpng_path.add_argument('--source-file', help='libxml2 source compressed dir')
     args = libpng_path.parse_args()
-    tar_file_path = os.path.join(args.source_file, "libxml2-2.9.14.tar.xz")
-    target_dir = os.path.join(args.gen_dir, "libxml2-2.9.14")
+    tar_file_path = os.path.join(args.source_file, "libxml2-2.14.0.tar.xz")
+    target_dir = os.path.join(args.gen_dir, "libxml2-2.14.0")
     untar_file(tar_file_path, target_dir, args)
     do_patch(args, target_dir)
     return 0

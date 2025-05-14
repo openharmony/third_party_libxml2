@@ -64,6 +64,7 @@ class ConfigHeader:
             self.write_buffer.append(value)
 
     def write_file(self, file_path):
+        self.write_buffer.append("#define HAVE_SNPRINTF 1\n")
         with os.fdopen(os.open(file_path, os.O_WRONLY | os.O_CREAT, 0o755), 'w') as file:
             file.truncate(0)
             file.writelines(self.write_buffer)
