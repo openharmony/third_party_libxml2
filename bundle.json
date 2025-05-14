@@ -32,14 +32,14 @@
                     "name": "//third_party/libxml2:libxml2",
                     "header": {
                         "header_files": [],
-                        "header_base": "${root_gen_dir}/third_party/libxml2/libxml2-2.9.14/include"
+                        "header_base": "${root_gen_dir}/third_party/libxml2/libxml2-2.14.0/include"
                     }
                 },
                 {
                     "name": "//third_party/libxml2:static_libxml2",
                     "header": {
                         "header_files": [],
-                        "header_base": "${root_gen_dir}/third_party/libxml2/libxml2-2.9.14/include"
+                        "header_base": "${root_gen_dir}/third_party/libxml2/libxml2-2.14.0/include"
                     }
                 }
             ],

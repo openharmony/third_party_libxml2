@@ -3,9 +3,9 @@
         "Name": "openEuler:libxml2",
         "License": "MIT License",
         "License File": "Copyright",
-        "Version Number": "2.9.14-9.oe2203sp3",
+        "Version Number": "2.14.0",
         "Owner": "jameslee@huawei.com",
-        "Upstream URL": "https://repo.openeuler.org/openEuler-22.03-LTS-SP3/source/Packages/libxml2-2.9.14-9.oe2203sp3.src.rpm",
+        "Upstream URL": "https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.14.0/libxml2-v2.14.0.zip",
         "Description": "Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform), it is free software available under the MIT License"
     }
 ]
