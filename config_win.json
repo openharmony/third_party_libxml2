@@ -49,13 +49,14 @@
     "PACKAGE":"libxml2",
     "PACKAGE_BUGREPORT":"xml@gnome.org",
     "PACKAGE_NAME":"libxml2",
-    "PACKAGE_STRING":"libxml2 2.9.14",
+    "PACKAGE_STRING":"libxml2 2.14.0",
     "PACKAGE_TARNAME":"libxml2",
     "PACKAGE_URL":"http://www.xmlsoft.org/",
-    "PACKAGE_VERSION":"2.9.14",
+    "PACKAGE_VERSION":"2.14.0",
     "SEND_ARG2_CAST":"(char*)",
     "STDC_HEADERS":"1",
     "VA_LIST_IS_ARRAY":"1",
-    "VERSION":"2.9.14",
-    "XML_SOCKLEN_T":"int"
+    "VERSION":"2.14.0",
+    "XML_SOCKLEN_T":"int",
+    "XML_SYSCONFDIR":"/etc"
 }
