@@ -60,7 +60,6 @@ action("libxml2_install_action") {
     "${target_gen_dir}/libxml2-2.14.0/xpath.c",
     "${target_gen_dir}/libxml2-2.14.0/xpointer.c",
     "${target_gen_dir}/libxml2-2.14.0/xzlib.c",
-    "${target_gen_dir}/libxml2-2.14.0/lintmain.c",
     "${target_gen_dir}/libxml2-2.14.0/shell.c",
     "${target_gen_dir}/libxml2-2.14.0/xmllint.c",
   ]
