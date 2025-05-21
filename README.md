@@ -1,4 +1,4 @@
-# openEuler:libxml2
+# libxml2
 
 #### Introduction & Software Architecture
 - [Refer to the official documentation](https://gitlab.gnome.org/GNOME/libxml2/)
@@ -9,7 +9,7 @@
 
 #### Patch Package Description
 
-The following patches is carried by the openEuler:libnl3 open source library:
+The following patches is carried by the libnl3 open source library:
 
 Fix-memleaks-in-xmlXIncludeProcessFlags.patch
 backport-parser-Fix-potential-memory-leak-in-xmlParseAttValue.patch
