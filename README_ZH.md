@@ -1,4 +1,4 @@
-# openEuler:libxml2
+# libxml2
 
 #### 简介 & 软件架构
 
@@ -10,7 +10,7 @@
 
 #### patch包说明
 
-以下patch包为openEuler:libxml2开源库本身携带
+以下patch包为libxml2开源库本身携带
 
 Fix-memleaks-in-xmlXIncludeProcessFlags.patch
 backport-parser-Fix-potential-memory-leak-in-xmlParseAttValue.patch
