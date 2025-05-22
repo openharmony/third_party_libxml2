@@ -1,6 +1,6 @@
 [
     {
-        "Name": "openEuler:libxml2",
+        "Name": "libxml2",
         "License": "MIT License",
         "License File": "Copyright",
         "Version Number": "2.14.0",
