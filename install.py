@@ -50,7 +50,8 @@ def do_patch(args, target_dir):
     patch_file = [
         "Backport-CVE-2025-32414-python-Read-at-most-len-4-ch-c.patch",
         "Backport-CVE-2025-32415-schemas-Fix-heap-buffer-over-c.patch",
-        "Fix_XML_PARSE_NOBLANKS_dropping_non-whitespace_text.patch"
+        "Fix_XML_PARSE_NOBLANKS_dropping_non-whitespace_text.patch",
+        "Backport-CVE-2025-6021-tree-Fix-integer-overflow-in-xmlBuildQName-c.patch"
     ]
 
     for patch in patch_file:
