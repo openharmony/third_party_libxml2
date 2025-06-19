@@ -24,7 +24,7 @@ index c223dbb9..5ba76699 100644
                           */
                          pre->next = tmp->next;
                          tmp->next = cur->attrs;
-@@ -6038,9 +6038,15 @@ xmlRelaxNGSimplify(xmlRelaxNGParserCtxtPtr ctxt,
+@@ -6038,9 +6039,15 @@ xmlRelaxNGSimplify(xmlRelaxNGParserCtxtPtr ctxt,
                      if ((parent == NULL) && (prev == NULL)) {
                          cur->type = XML_RELAXNG_NOOP;
                      } else if (prev == NULL) {
