@@ -1,0 +1,84 @@
+From 6d71ed443d0b4ab1a3e9e43c6c2f1c2c3dc127cd Mon Sep 17 00:00:00 2001
+From: l30034438 <l30034438@notesmail.huawei.com/>
+Date: Thu, 19 Jun 2025 11:11:08 +0800
+Subject: [PATCH] Fix relaxng is parsed to an infinite attrs->next loop
+
+Change-Id: I2b7b37c628b20bd234b84d8938d241dd722af087
+---
+ relaxng.c                      | 13 ++++++++++---
+ test/relaxng/useless_group.rng | 21 +++++++++++++++++++++
+ test/relaxng/useless_group.xml |  3 +++
+ 3 files changed, 34 insertions(+), 3 deletions(-)
+ create mode 100644 test/relaxng/useless_group.rng
+ create mode 100644 test/relaxng/useless_group.xml
+
+diff --git a/relaxng.c b/relaxng.c
+index c223dbb9..5ba76699 100644
+--- a/relaxng.c
++++ b/relaxng.c
+@@ -6018,6 +6018,7 @@ xmlRelaxNGSimplify(xmlRelaxNGParserCtxtPtr ctxt,
+                     if (attronly == 1) {
+                         /*
+                          * migrate tmp to attrs
++                         * if this runs twice an infinite attrs->next loop can be created
+                          */
+                         pre->next = tmp->next;
+                         tmp->next = cur->attrs;
+@@ -6038,9 +6039,15 @@ xmlRelaxNGSimplify(xmlRelaxNGParserCtxtPtr ctxt,
+                     if ((parent == NULL) && (prev == NULL)) {
+                         cur->type = XML_RELAXNG_NOOP;
+                     } else if (prev == NULL) {
+-                        parent->content = cur->content;
+-                        cur->content->next = cur->next;
+-                        cur = cur->content;
++                        /*
++                         * this simplification may already have happened
++                         * if this is done twice this leads to an infinite loop of attrs->next
++                         */
++                        if (parent->content != cur->content) {
++                            parent->content = cur->content;
++                            cur->content->next = cur->next;
++                            cur = cur->content;
++                        }
+                     } else {
+                         cur->content->next = cur->next;
+                         prev->next = cur->content;
+diff --git a/test/relaxng/useless_group.rng b/test/relaxng/useless_group.rng
+new file mode 100644
+index 00000000..f295a100
+--- /dev/null
++++ b/test/relaxng/useless_group.rng
+@@ -0,0 +1,21 @@
++<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
++  ns="http://relaxng.org/ns/structure/1.0"
++  xmlns="http://relaxng.org/ns/structure/1.0">
++
++  <start>
++    <ref name="listOfLists"/>
++  </start>
++
++  <define name="listOfLists">
++    <element name="listOfLists">
++    <group>
++      <zeroOrMore>
++         <ref name="listOfLists"/>
++      </zeroOrMore>
++    </group>
++    <optional>
++      <attribute name="fail"/>
++    </optional>
++    </element>
++  </define>
++</grammar>
+diff --git a/test/relaxng/useless_group.xml b/test/relaxng/useless_group.xml
+new file mode 100644
+index 00000000..7806bd48
+--- /dev/null
++++ b/test/relaxng/useless_group.xml
+@@ -0,0 +1,3 @@
++<listOfLists xmlns="http://relaxng.org/ns/structure/1.0" fail="">
++<listOfLists/>
++</listOfLists>
+-- 
+2.34.1
+
