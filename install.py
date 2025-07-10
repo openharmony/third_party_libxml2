@@ -52,7 +52,8 @@ def do_patch(args, target_dir):
         "Backport-CVE-2025-32415-schemas-Fix-heap-buffer-over-c.patch",
         "Fix_XML_PARSE_NOBLANKS_dropping_non-whitespace_text.patch",
         "Backport-CVE-2025-6021-tree-Fix-integer-overflow-in-xmlBuildQName-c.patch",
-        "Fix-relaxng-is-parsed-to-an-infinite-attrs-next-loop.patch"
+        "Fix-relaxng-is-parsed-to-an-infinite-attrs-next-loop.patch",
+        "Backport-CVE-2025-6170-Fix-potential-buffer-overflow-of-interactive-shell.patch"
     ]
 
     for patch in patch_file:
