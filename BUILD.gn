@@ -148,10 +148,6 @@ config("libxml2_static_private_config") {
   cflags_cc = [ "-std=c++17" ]
 }
 
-group("xml2") {
-  public_deps = [ ":libxml2" ]
-}
-
 ohos_shared_library("libxml2") {
   branch_protector_ret = "pac_ret"
   output_values = get_target_outputs(":libxml2_install_action")
