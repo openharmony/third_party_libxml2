@@ -60,7 +60,8 @@ def do_patch(args, target_dir):
         "Fix-CVE-2023-45322-pre.patch",
         "Fix-CVE-2023-45322-first.patch",
         "Fix-CVE-2023-45322-second.patch",
-        "Fix-CVE-2024-34459.patch"
+        "Fix-CVE-2024-34459.patch",
+        "Fix-CVE-2025-32414.patch"
     ]
 
     for patch in patch_file:
