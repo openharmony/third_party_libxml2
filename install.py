@@ -59,7 +59,8 @@ def do_patch(args, target_dir):
         "Fix-CVE-2025-8732-Prevent-infinite-recursion-in-xmlCatalogList.patch",
         "Fix-CVE-2026-0990-catalog-prevent-inf-recursion-in-xmlCatalogXMLResolveURI.patch",
         "Fix-CVE-2026-0992-catalog-Ignore-repeated-nextCatalog-entries.patch",
-        "Fix-CVE-2026-0989-Add-RelaxNG-include-limit.patch"
+        "Fix-CVE-2026-0989-Add-RelaxNG-include-limit.patch",
+        "Fix-CVE-2026-1757-shell-free-cmdline-before-continue.patch"
     ]
 
     for patch in patch_file:
