@@ -240,7 +240,8 @@ def do_patch(args, target_dir):
         "Backport-CVE-2025-6021-tree-Fix-integer-overflow-in-xmlBuildQName-c.patch",
         "Fix-relaxng-is-parsed-to-an-infinite-attrs-next-loop.patch",
         "Backport-CVE-2025-6170-Fix-potential-buffer-overflow-of-interactive-shell.patch",
-        "Fix-CVE-2025-49794-CVE-2025-49796-memory-safety-issues-in-xmlSchematronReportOutput.patch"
+        "Fix-CVE-2025-49794-CVE-2025-49796-memory-safety-issues-in-xmlSchematronReportOutput.patch",
+        "Fix-CVE-2026-0990-catalog-prevent-inf-recursion-in-xmlCatalogXMLResolveURI.patch"
     ]
 
     for patch in patch_file:
