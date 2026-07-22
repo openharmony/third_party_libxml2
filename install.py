@@ -61,7 +61,8 @@ def do_patch(args, target_dir):
         "Fix-CVE-2026-0992-catalog-Ignore-repeated-nextCatalog-entries.patch",
         "Fix-CVE-2026-0989-Add-RelaxNG-include-limit.patch",
         "Fix-CVE-2026-1757-shell-free-cmdline-before-continue.patch",
-        "Fix-CVE-2026-6732-Fix-Crash-parser.c.patch"
+        "Fix-CVE-2026-6732-Fix-Crash-parser.c.patch",
+        "Fix-CVE-2026-11979-xmlcatalog-overflow-check-for-large-shell-commands.patch"
     ]
 
     for patch in patch_file:
