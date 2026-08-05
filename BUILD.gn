@@ -213,6 +213,7 @@ if (current_os == "ios") {
 }
 
 ohos_static_library("static_libxml2") {
+  branch_protector_ret = "pac_ret"
   output_values = get_target_outputs(":libxml2_install_action")
   sources = filter_exclude(output_values,
                            [
