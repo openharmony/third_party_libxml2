@@ -62,7 +62,15 @@ def do_patch(args, target_dir):
         "Fix-CVE-2026-0989-Add-RelaxNG-include-limit.patch",
         "Fix-CVE-2026-1757-shell-free-cmdline-before-continue.patch",
         "Fix-CVE-2026-6732-Fix-Crash-parser.c.patch",
-        "Fix-CVE-2026-11979-xmlcatalog-overflow-check-for-large-shell-commands.patch"
+        "Fix-CVE-2026-11979-xmlcatalog-overflow-check-for-large-shell-commands.patch",
+        "Fix-CVE-2026-86137-xmlregexp-Prevent-out-of-bounds-read-in-NXT-macro.patch",
+        "Fix-CVE-2026-86138-add-overflow-checks-to-xmlDictAddQString-in-dictc.patch",
+        "Fix-CVE-2026-86139-add-length-check-to-xmlURIEscapeStr-in-uric.patch",
+        "Fix-CVE-2026-86140-add-bounds-checks-to-xmlSnprintfElements-in-validc.patch",
+        "Backport-CVE-2026-86141-xmlregexp-Calc-string-length-after-null-checking.patch",
+        "Fix-CVE-2026-86142-xpointer-Check-overflow-in-xmlXPtrEvalXPtrPart.patch",
+        "Fix-CVE-2026-86143-xmlIO-Check-for-int-overflow-before-calling-writec.patch",
+        "Backport-CVE-2026-86144-xinclude-propagate-parseFlags-in-xmlXIncludeProces.patch"
     ]
 
     for patch in patch_file:
